@@ -1,0 +1,30 @@
+/* Global */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300&display=swap');
+
+html {
+    font-family: 'Open Sans';
+    background-color: #b4eddf;
+    scroll-behavior: smooth;
+}
+
+.btn {
+    padding: 10px;
+    border-color: red;
+    background-color: #b4eddf;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background-color: red;
+    color: white;
+}
+
+footer {
+    padding: 20px;
+    width: 100%;
+    background-color: black;
+    color: wheat;
+}

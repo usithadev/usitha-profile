@@ -1,0 +1,62 @@
+/* Homepage */
+
+#main-vid {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#cont {
+    display: flex;
+    width: 100%;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    color: white;
+    /*inner*/
+    padding: 50px;
+    cursor: context-menu;
+}
+
+#mvid {
+    margin: auto;
+    display: block;
+}
+
+.whiter {
+    background-color: rgba(8, 0, 0, 0.363);
+    padding: 20px;
+}
+
+@media only screen and (max-width: 400) {
+    #mvid {
+        margin-left: -280px;
+    }
+}
+
+.absec {
+    padding: 50px;
+}
+
+.nosee {
+    color: #b4eddf;
+}
+
+.lang {
+    height: 127.5px;
+    width: 127.5px;
+}
+
+img.java {
+    width: 55.3333333333px;
+    height: 101.333333333px;
+}
+
+.njs {
+    width: 146.5px;
+    height: 87.5px;
+}
