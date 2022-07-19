@@ -22,10 +22,17 @@ import { config as envconf } from "dotenv"; envconf();
 const app = express();
 const PORT:number = Number(process.env.PORT);
 
-app.use("/", express.static(__dirname + "/public/"));
+app.use(express.static(__dirname + "/public/"));
+app.use("/tools", (rec, res) => {
+    res.sendFile(__dirname + "/public/tools.html");
+});
 
 app.use((rec, res) => {
     res.status(404).sendFile(__dirname + "/public/404.html");
+});
+
+app.get("/tools", (rec, res) => {
+    res.send("Something");
 });
 
 app.get("/", (rec, res) => {
