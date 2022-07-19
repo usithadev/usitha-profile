@@ -16,14 +16,10 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-body {
-    padding: 20px;
-}
-
 header {
     text-align: center;
 }
 
 .tool {
-    padding: 20px;
+    padding: 40px;
 }
