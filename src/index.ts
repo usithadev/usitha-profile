@@ -24,6 +24,10 @@ const PORT:number = Number(process.env.PORT);
 
 app.use("/", express.static(__dirname + "/public/"));
 
+app.use((rec, res) => {
+    res.status(404).sendFile(__dirname + "/public/404.html");
+});
+
 app.get("/", (rec, res) => {
     res.send("Usitha's official profile website.");
 });
