@@ -33,9 +33,16 @@
     flex-direction: column; 
     justify-content: center;
     align-items: center;
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
+    background-image: url(../media/laptop.jpg);
+    background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    text-shadow: 2px 2px 8px white;
     
     color: white;
     /*inner*/
