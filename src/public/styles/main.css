@@ -49,3 +49,11 @@ footer {
     background-color: black;
     color: wheat;
 }
+
+a:link {
+    color: pink;
+}
+
+a:visited {
+    color: white;
+}
