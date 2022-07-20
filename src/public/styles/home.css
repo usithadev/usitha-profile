@@ -20,14 +20,16 @@
 /* Homepage */
 
 #main-vid {
-    width: 100%;
+    left: 0;
+    right: 0;
     height: auto;
     position: relative;
 }
 
 #cont {
     display: flex;
-    width: 100%;
+    left: 0;
+    right: 0;
     flex-direction: column; 
     justify-content: center;
     align-items: center;
@@ -52,8 +54,10 @@
 }
 
 @media only screen and (max-width: 400) {
-    #mvid {
-        margin-left: -280px;
+    #cont {
+        float: left;
+        justify-content: left;
+        padding-left: 1px;
     }
 }
 
@@ -62,20 +66,5 @@
 }
 
 .nosee {
-    color: #b4eddf;
-}
-
-.lang {
-    height: 127.5px;
-    width: 127.5px;
-}
-
-img.java {
-    width: 55.3333333333px;
-    height: 101.333333333px;
-}
-
-.njs {
-    width: 146.5px;
-    height: 87.5px;
+    color: #242323;
 }

@@ -22,22 +22,25 @@
 
 html {
     font-family: 'Open Sans';
-    background-color: #b4eddf;
+    background-color: #242323;
     scroll-behavior: smooth;
+    color: white;
 }
 
 .btn {
     padding: 10px;
-    border-color: red;
-    background-color: #b4eddf;
+    border-color: white;
+    background-color: #242323;
     transition: 0.5s;
     cursor: pointer;
     border-radius: 20px;
+    color: white;
 }
 
 .btn:hover {
-    background-color: red;
-    color: white;
+    background-color: white;
+    border-color: white;
+    color: black;
 }
 
 footer {
