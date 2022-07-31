@@ -23,6 +23,11 @@ const app = express();
 const PORT:number = Number(process.env.PORT);
 
 app.use(express.static(__dirname + "/public/"));
+
+app.get("/about", (rec, res) => {
+    res.sendFile(__dirname + "/public/about.html");
+});
+
 app.get("/tools", (rec, res) => {
     res.sendFile(__dirname + "/public/tools.html");
 });
