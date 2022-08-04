@@ -21,7 +21,7 @@ import { config as envconf } from "dotenv"; envconf();
 import path from "path";
 
 const app = express();
-const PORT:number = Number(process.env.PORT);
+const PORT:number = Number(process.env.PORT) || 3000;
 
 app.use("/", express.static(path.join(__dirname, "public")));
 
