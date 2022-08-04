@@ -33,6 +33,10 @@ app.get("/about/tools", (rec, res) => {
     res.sendFile(path.join(__dirname, "public", "tools.html"));
 });
 
+app.get("/about/tools/languages", (rec, res) => res.sendFile(path.join(__dirname, "public", "languages.html")));
+app.get("/about/tools/frameworks", (rec, res) => res.sendFile(path.join(__dirname, "public", "frameworks.html")));
+app.get("/about/tools/softwares", (rec, res) => res.sendFile(path.join(__dirname, "public", "softwares.html")));
+
 app.use((rec, res) => {
     res.status(404).sendFile(path.join(__dirname, "public", "404.html"));
 });
