@@ -28,7 +28,7 @@ app.get("/about", (rec, res) => {
     res.sendFile(__dirname + "/public/about.html");
 });
 
-app.get("/tools", (rec, res) => {
+app.get("/about/tools", (rec, res) => {
     res.sendFile(__dirname + "/public/tools.html");
 });
 
