@@ -18,26 +18,23 @@
 
 import express from "express";
 import { config as envconf } from "dotenv"; envconf();
+import path from "path";
 
 const app = express();
 const PORT:number = Number(process.env.PORT);
 
-app.use(express.static(__dirname + "/public/"));
+app.use("/", express.static(path.join(__dirname, "public")));
 
 app.get("/about", (rec, res) => {
-    res.sendFile(__dirname + "/public/about.html");
+    res.sendFile(path.join(__dirname, "public", "about.html"));
 });
 
 app.get("/about/tools", (rec, res) => {
-    res.sendFile(__dirname + "/public/tools.html");
+    res.sendFile(path.join(__dirname, "public", "tools.html"));
 });
 
 app.use((rec, res) => {
-    res.status(404).sendFile(__dirname + "/public/404.html");
-});
-
-app.get("/", (rec, res) => {
-    res.send("Usitha's official profile website.");
+    res.status(404).sendFile(path.join(__dirname, "public", "404.html"));
 });
 
 app.listen(PORT , () => {
