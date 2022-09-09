@@ -33,10 +33,3 @@ setInterval(() => {
     }
 
 }, 2000);
-
-function tg()
-{
-    setTimeout(() => {
-        window.open("https://t.me/usithadevinfo");
-    }, 5);
-}
