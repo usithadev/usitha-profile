@@ -2,3 +2,4 @@ node_modules
 src/index.js
 .env
 src/public/scripts/*.js
+src/public/scripts/*.LICENSE.txt
