@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
 class Footer extends React.Component {
     render(): React.ReactNode {
@@ -10,4 +10,25 @@ class Footer extends React.Component {
     }
 }
 
-export { Footer };
+interface DescSectInterface { id: string; topic:string; desc:string | ReactNode, more?:ReactNode | JSX.Element | JSX.Element[] }
+
+class DescSect extends React.Component<DescSectInterface, {}> {
+    render(): React.ReactNode {
+        return (
+            <section id={this.props.id} className="absec">
+
+                <h1><u>{this.props.topic}</u></h1>
+                <p>{this.props.desc}</p>
+
+                <React.Fragment>
+                    {
+                        (this.props.more !== undefined) ? this.props.more : <React.Fragment></React.Fragment>
+                    }
+                </React.Fragment>
+
+            </section>
+        )
+    }
+}
+
+export { Footer, DescSect, DescSectInterface };
