@@ -26,7 +26,7 @@ setInterval(() => {
 
     changer.textContent = iamas[counter];
 
-    if(iamas[counter] == "PROGRAMMER") {
+    if(iamas[counter] == "GAME DEVELOPER (BEGINNER)") {
         counter = 0;
     } else {
         counter += 1;
