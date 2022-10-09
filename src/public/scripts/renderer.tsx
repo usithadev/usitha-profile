@@ -19,8 +19,9 @@ let homeinfo:DescSectInterface[] = [
 
         desc: (
             <React.Fragment>
-                My name is Usitha Indeewara. I am a developer. Mostly interested in Web development, Game development and Artificial intelligence and automation. I'm a teenager. I started coding when I am 12 years old. My hope to be a data scientist and a game developer one day!
-                I'm still learning coding at freeCodeCamp and many other resources. Find me at <a href="https://github.com/usithadev">Github</a>, <a href="https://stackoverflow.com/users/19099302/usitha-indeewara">Stack Overflow.</a>
+                My name is Usitha Indeewara. I am a programmer. Mostly interested Game development, desktop application developement, web development and artificial intelligence.
+
+                I'm still learning coding and game development from internet(freeCodeCamp, YouTube, etc.). Find me at <a href="https://github.com/usithadev">Github</a>, <a href="https://stackoverflow.com/users/19099302/usitha-indeewara">Stack Overflow.</a>
             </React.Fragment>
         ),
 
