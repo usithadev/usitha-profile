@@ -18,7 +18,7 @@
 
 let changer = <HTMLSpanElement> document.getElementById("change");
 
-const iamas = ["WEB DEVELOPER", "FULL STACK DEVELOPER", "UI DESIGNER", "C++ LOVER", "PROGRAMMER"];
+const iamas = ["WEB DEVELOPER", "FULL STACK DEVELOPER", "UI DESIGNER", "C++ LOVER", "PROGRAMMER", "GAME DEVELOPER (BEGINNER)"];
 
 let counter = 0;
 
