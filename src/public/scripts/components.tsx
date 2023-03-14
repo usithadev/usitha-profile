@@ -12,6 +12,10 @@ class Footer extends React.Component {
 
 interface DescSectInterface { id: string; topic:string; desc:string | ReactNode, more?:ReactNode | JSX.Element | JSX.Element[] }
 
+
+/**
+ * The description sets. Example: The ABOUT MR section and the PROJECTS section in the homepage
+ */
 class DescSect extends React.Component<DescSectInterface, {}> {
     render(): React.ReactNode {
         return (
