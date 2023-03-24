@@ -1,21 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import Footer from "./footer";
-import { DescSect, dataset } from "./DescSect";
+import { DescSect } from "./DescSect";
+import descSectData from "./data";
 
 // Functions and data
 function root(selectors:string) {
     return ReactDOM.createRoot(document.querySelector(selectors)!);
 }
-
-
-let descSectData:[dataset] = [{
-    src: "https://static.zerochan.net/Le.Malin.full.2619645.jpg",
-    alt: "A cute anime girl",
-    text: "I like anime girls",
-    float: "right",
-    title: "I LOVE ANIME"
-}]
 
 // Root definations
 const main = root("main");
