@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300&display=swap');
+
+html {
+    font-family: 'Open Sans';
+}
+
+footer {
+    width: auto;
+    padding: 20px;
+    background-color: rgb(63, 45, 45);
+    color: white;
+}
+
+#container {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    padding: 20px;
+}
+
+.img {
+    margin-right: 100px;
+    margin-left: 100px;
+    /* display: block; */
+    max-height: 300px;
+}
+
+.cen {
+    text-align: center;
+    word-wrap: break-word;
+}
